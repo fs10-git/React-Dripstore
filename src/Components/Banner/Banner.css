@@ -13,12 +13,12 @@
 
 /* #saleContent Config */
 #saleContent{
-    width: 30%;
+    width: 35%;
     height: 100%;
-    margin-left: 15%;
+    margin-left: 5%;
     display: block;
     box-sizing: border-box;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 #saleContent span{
@@ -28,7 +28,7 @@
 }
 
 #saleContent h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: black;
 }
@@ -52,8 +52,10 @@
 
 /* #saleImg Config */
 #saleImage{
-    width: 45%;
+    width: 56%;
     height: 100%;
+    padding-top: 4vh;
+    padding-left: 10vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -79,7 +81,7 @@
     background-size: 1.5vh 1.5vh;
     background-repeat: round;
     position: absolute;
-    right: 15%;
+    right: 5%;
     top: 20%;
     z-index: 2;
 }

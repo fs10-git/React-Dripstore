@@ -1,8 +1,9 @@
 /* Card > product Config */
 .trendingProduct{
-    width: 17%;
+    width: 22%;
     height: 37.5vh;
     cursor: pointer;
+    
 }
 
 .productImage{
