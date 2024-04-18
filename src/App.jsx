@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import ProductDetails from './Pages/ProductDetails';
 import Product from './Pages/Product';
+import CarrinhoPage from './Pages/Carrinho';
 export default function App() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function App() {
           <Route path='login' element={<Login />}/>
           <Route path='productDetails' element={<ProductDetails />}/>
           <Route path='product' element={<Product />}/>
+          <Route path='carrinho' element={<CarrinhoPage />}/>
         </Routes>
       </BrowserRouter>
     </>

@@ -60,7 +60,7 @@ export default function HeroProduct() {
               <div className="color3"></div>
               <div className="color4"></div>
             </div>
-            <button>Comprar</button>
+            <button id="buy">Comprar</button>
         </div>
 
     </div>
