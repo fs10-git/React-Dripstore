@@ -1,5 +1,8 @@
 import "./Carrinho.css";
 import BgBlue from "../../assets/BgBlue.png";
+import Card from "../CardLists/Card";
+import Footer from "../Footer/Footer";
+import ImagemArrow from "../../assets/arrow.png";
 
 export default function Carrinho() {
   return (
@@ -91,6 +94,20 @@ export default function Carrinho() {
             <button>Continuar</button>
           </div>
         </div>
+      </div>
+      <div className="meio">
+        <p className="subtitle">Produtos relacionados</p>
+        <a href="#">ver todos</a>
+        <img src={ImagemArrow} alt="arrow" />
+      </div>
+      <div className="cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

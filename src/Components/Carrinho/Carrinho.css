@@ -55,12 +55,12 @@
   margin-left: 1vw;
 }
 .desc p {
-  margin-top: 1vh;
+  margin-top: 3vh;
   color: rgb(157, 157, 152);
 }
 .desc span {
   margin-top: 1vh;
-  color: #1F1F1F;
+  color: #1f1f1f;
 }
 .calculations {
   width: 18%;
@@ -104,39 +104,39 @@
   font-size: 14px;
 }
 .cupom_a {
-    display: flex;
-
-
+  display: flex;
 }
 .cupom_a p {
-    font-size: 1.8vh;
-    font-weight: 600;
-    color: #1F1F1F;
-    padding-right: 43vh;
-    padding-bottom: 2vh;
+  font-size: 1.8vh;
+  font-weight: 600;
+  color: #1f1f1f;
+  padding-right: 43vh;
+  padding-bottom: 2vh;
 }
 .cupom_b {
-    display: flex;
-    
+  width: 100%;
+  display: flex;
 }
 .cupom_b input {
-    width: 50vh;
-    height: 6vh;
-    background-color: #f0ebeb;
-    border: 0;
-    border-radius: 5px;
-    font-size: 1.6vh;
-    padding-left: 2vh;
-    margin-right: 1vh;
+  width: 50vh;
+  height: 6vh;
+  background-color: #f0ebeb;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.6vh;
+  padding-left: 2vh;
+  margin-right: 2vh;
 }
 .cupom_b button {
-    width: 6vh;
-    height: 6vh;
-    background-color:#f0ebeb;
-    border: 0;
-    border-radius: 5px;
-    margin-right: 1vh;
-    cursor: pointer;
+  width: 9vh;
+  height: 6vh;
+  background-color: #f0ebeb;
+  border: 0;
+  color: #c92071;
+  font-size: 1.5vh;
+  border-radius: 5px;
+ margin-right: 1vh;
+  cursor: pointer;
 }
 .resumo {
   width: 22%;
@@ -159,46 +159,72 @@
   justify-content: space-between;
 }
 .compras_a p {
-    font-size: 1.8vh;
-    color: rgb(170, 172, 172);
-    padding-bottom: 5vh;
-
+  font-size: 1.8vh;
+  color: rgb(170, 172, 172);
+  padding-bottom: 5vh;
 }
 .total strong {
-    font-size: 2.1vh;
-    color: #1F1F1F;
+  font-size: 2.1vh;
+  color: #1f1f1f;
 }
 .compras_b p {
-    font-size: 1.8vh;
-    color: #1F1F1F;
-    padding-bottom: 5vh;
-
+  font-size: 1.8vh;
+  color: #1f1f1f;
+  padding-bottom: 5vh;
 }
 .compras_b span {
-    font-size: 2vh;
-    color: #EE4266;
-    font-weight: 600;
-    margin-top: 1vh;
+  font-size: 2vh;
+  color: #ee4266;
+  font-weight: 600;
+  margin-top: 1vh;
 }
 .parcelamento {
-    color: #8F8F8F;
-    font-size: 1.8vh;
-    text-align: right;
-
+  color: #8f8f8f;
+  font-size: 1.8vh;
+  text-align: right;
 }
 .compras button {
-    margin-top: 2vh;
-    width: 90%;
-    height: 4vh;
-    background-color: #F6AA1C;
-    font-size: 1.9vh;
-    color: #ffffff;
-    font-weight: 600;
-    border: 0;
-    border-radius: 8px;
-    margin-left: 2vh;
-    cursor: pointer;
-    
-
+  margin-top: 2vh;
+  width: 90%;
+  height: 5vh;
+  background-color: #f6aa1c;
+  font-size: 1.9vh;
+  color: #ffffff;
+  font-weight: 600;
+  border: 0;
+  border-radius: 8px;
+  margin-left: 2vh;
+  cursor: pointer;
+}
+.meio {
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 5%;
+}
+.meio a {
+  font-size: 1.8vh;
+  margin-right: 1vh;
+  text-decoration: none;
+  color: #c92071;
+}
+.meio img {
+  margin-top: -0.5vh;
+}
+.subtitle {
+  font-size: 2vh;
+  color: #1f1f1f;
+  font-weight: 600;
+  margin-right: 92vh;
 }
 
+.cards {
+  margin-top: 3vh;
+  display: flex;
+  gap: 2vh;
+  padding-left: 5%;
+  width: 69%;
+  border-radius: 5px;
+}
+.footer {
+  margin-top: 8vh;
+}
