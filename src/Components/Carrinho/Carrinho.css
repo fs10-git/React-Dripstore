@@ -197,18 +197,23 @@
   cursor: pointer;
 }
 .meio {
+  width: 63.5%;
   display: flex;
+  justify-content: space-between;
   padding-top: 4vh;
   padding-left: 5%;
 }
-.meio a {
-  font-size: 1.8vh;
+.meio_b {
+  display: flex;
+}
+.meio_b a {
+  font-size: 2vh;
   margin-right: 1vh;
   text-decoration: none;
   color: #c92071;
 }
 .meio img {
-  margin-top: -0.5vh;
+  margin-top: -0.7vh;
 }
 .subtitle {
   font-size: 2vh;

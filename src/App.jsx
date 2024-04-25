@@ -5,6 +5,7 @@ import Login from './Pages/Login';
 import ProductDetails from './Pages/ProductDetails';
 import Product from './Pages/Product';
 import CarrinhoPage from './Pages/Carrinho';
+import FinalizarCompras from "./Pages/FinalizarCompras"
 export default function App() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function App() {
           <Route path='productDetails' element={<ProductDetails />}/>
           <Route path='product' element={<Product />}/>
           <Route path='carrinho' element={<CarrinhoPage />}/>
+          <Route path='finalizarcompras' element={<FinalizarCompras/>}/>
         </Routes>
       </BrowserRouter>
     </>

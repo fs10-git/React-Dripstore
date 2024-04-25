@@ -2,9 +2,21 @@ import "./Carrinho.css";
 import BgBlue from "../../assets/BgBlue.png";
 import Card from "../CardLists/Card";
 import Footer from "../Footer/Footer";
+import { useState } from "react";
 import ImagemArrow from "../../assets/arrow.png";
 
 export default function Carrinho() {
+  // contador
+  const [count,useCount] = useState(0)
+  function Acrescimo() {
+    useCount(count+1)
+
+  }
+  function Decrescimo() {
+    useCount(count-1)
+
+  }
+  
   return (
     <>
       <div className="pai">
@@ -35,9 +47,9 @@ export default function Carrinho() {
             </div>
             <div className="calculations">
               <div className="calcButtons">
-                <button>-</button>
-                <p>0</p>
-                <button>+</button>
+                <button onClick={Decrescimo}>-</button>
+                <p>{count}</p>
+                <button onClick={Acrescimo}>+</button>
               </div>
               <div className="removeItem">
                 <a href="">Remover Item</a>
@@ -97,14 +109,19 @@ export default function Carrinho() {
       </div>
       <div className="meio">
         <p className="subtitle">Produtos relacionados</p>
-        <a href="#">ver todos</a>
-        <img src={ImagemArrow} alt="arrow" />
+        <div className="meio_b">
+          <a href="#">ver todos</a>
+          <img src={ImagemArrow} alt="arrow" />
+        </div>
       </div>
       <div className="cards">
+        {/* <Card />
         <Card />
         <Card />
-        <Card />
-        <Card />
+        <Card /> */}
+
+        
+        <p>cards</p>
       </div>
       <div className="footer">
         <Footer />

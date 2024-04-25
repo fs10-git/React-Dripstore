@@ -1,5 +1,6 @@
 import "./Header.css";
 import Vector from "/images/Vector.png";
+import { Link } from "react-router-dom";
 
 // import Link from "react-router-dom";
 
@@ -18,7 +19,7 @@ export default function Header() {
           </div>
           <div id="signup">
             <a href="">Cadastre-se</a>
-            <button>Entrar</button>
+            <Link className="link" to="/login"><button>Entrar</button></Link>
           </div>
           <div id="cart">
             <i className="fa-solid fa-cart-shopping" tabIndex={0}></i>
