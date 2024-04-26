@@ -1,0 +1,129 @@
+#Master {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#Master h1 {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  font-size: 3vh;
+  color: #1f1f1f;
+}
+.components_superior {
+  display: flex;
+  justify-content: space-between;
+}
+.lado_a {
+  width: 62%;
+  height: 52vh;
+  background-color: #ffffff;
+  padding: 3vh;
+  border-radius: 4px;
+}
+.title_a {
+  font-size: 2.3vh;
+  color: #474747;
+  font-weight: 600;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+}
+.lado_a p {
+  font-size: 1.8vh;
+  color: #474747;
+  padding-bottom: 2vh;
+}
+.lado_a input {
+  width: 98%;
+  height: 6vh;
+  border: 0;
+  background-color: rgb(231, 231, 231);
+  border-radius: 4px;
+  margin-bottom: 1.5vh;
+  padding-left: 1.5vh;
+  font-size: 1.8vh;
+}
+.lado_b {
+  width: 30%;
+  background-color: #ffffff;
+  padding: 3vh;
+  border-radius: 4px;
+}
+.lado_b h3 {
+  font-size: 2.5vh;
+  font-weight: 600;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 2vh;
+}
+.topo_b {
+  display: flex;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #cccccc;
+}
+.topo_img {
+  width: 4rem;
+  height: 2rem;
+  background-color: #e2e3ff;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  margin-right: 2vh;
+}
+.topo_b p {
+  padding-left: 4vh;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+.topo_img img {
+  width: 3rem;
+  height: 1.5rem;
+}
+.lado_b_inferior {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2vh;
+}
+.lado_b_inferior_a p {
+  margin-bottom: 2.5vh;
+  color: #8f8f8f;
+  font-size: 1.8vh;
+}
+.lado_b_inferior_b p {
+  margin-bottom: 2.5vh;
+  color: #1f1f1f;
+  font-size: 2vh;
+}
+.lado_b_inferior_c {
+  background-color: #f6aa1c0d;
+  padding: 2vh;
+  border: 1px solid #fab4310d;
+}
+.lado_b_inferior_c p {
+  margin-bottom: 2vh;
+}
+.valor {
+  color: #8f8f8f;
+  font-size: 1.8vh;
+  text-align: end;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5vh;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.botaoo {
+  width: 99%;
+  height: 6vh;
+  background-color: #f6aa1c;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.8vh;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 3vh;
+}

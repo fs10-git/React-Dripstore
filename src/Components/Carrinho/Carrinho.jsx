@@ -4,19 +4,18 @@ import Card from "../CardLists/Card";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
 import ImagemArrow from "../../assets/arrow.png";
+import { Link } from "react-router-dom";
 
 export default function Carrinho() {
   // contador
-  const [count,useCount] = useState(0)
+  const [count, useCount] = useState(0);
   function Acrescimo() {
-    useCount(count+1)
-
+    useCount(count + 1);
   }
   function Decrescimo() {
-    useCount(count-1)
-
+    useCount(count - 1);
   }
-  
+
   return (
     <>
       <div className="pai">
@@ -103,7 +102,9 @@ export default function Carrinho() {
               </div>
             </div>
             <p className="parcelamento">ou 10x de R$ 21,00 sem juros</p>
-            <button>Continuar</button>
+            <Link className="link" to="/finalizarcompras">
+              <button>Continuar</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -120,7 +121,6 @@ export default function Carrinho() {
         <Card />
         <Card /> */}
 
-        
         <p>cards</p>
       </div>
       <div className="footer">
