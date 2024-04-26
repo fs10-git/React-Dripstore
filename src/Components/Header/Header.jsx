@@ -19,14 +19,18 @@ export default function Header() {
           </div>
           <div id="signup">
             <a href="">Cadastre-se</a>
-            <Link className="link" to="/login"><button>Entrar</button></Link>
+            <Link className="link" to="/login">
+              <button>Entrar</button>
+            </Link>
           </div>
           <div id="cart">
-            <i className="fa-solid fa-cart-shopping" tabIndex={0}></i>
+            <Link to="/carrinho">
+              <i className="fa-solid fa-cart-shopping" tabIndex={0}></i>
+            </Link>
           </div>
         </div>
         <navbar id="navbar">
-          <a href="#">Home</a>
+          <Link to="/home">Home</Link>
           <a href="#">Produtos</a>
           <a href="#">Categorias</a>
           <a href="#">Meus Pedidos</a>

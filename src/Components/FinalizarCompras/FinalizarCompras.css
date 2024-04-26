@@ -187,6 +187,12 @@
 .radio_a {
   padding-right: 3vh;
 }
+.radio_a input {
+  margin-right: 0.5vh;
+}
+.radio_b input {
+  margin-right: 0.5vh;
+}
 .lado_a3 p {
   font-size: 1.8vh;
   color: #474747;
@@ -241,5 +247,5 @@
   margin-bottom: 2vh;
 }
 .preco_final {
-  color: #EE4266;
+  color: #ee4266;
 }
