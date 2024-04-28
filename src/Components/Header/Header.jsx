@@ -18,7 +18,7 @@ export default function Header() {
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
           <div id="signup">
-            <a href="">Cadastre-se</a>
+            <Link to="/cadastro">Cadastre-se</Link>
             <Link className="link" to="/login">
               <button>Entrar</button>
             </Link>
@@ -30,7 +30,7 @@ export default function Header() {
           </div>
         </div>
         <navbar id="navbar">
-          <a href="#">Home</a>
+          <Link to="/home">Home</Link>
           <a href="#">Produtos</a>
           <a href="#">Categorias</a>
           <a href="#">Meus Pedidos</a>
