@@ -1,5 +1,5 @@
 import "./Card.css";
-import {useState} from "react"
+import { useState } from "react";
 
 import kSwiss from "/images/kSwiss.png";
 

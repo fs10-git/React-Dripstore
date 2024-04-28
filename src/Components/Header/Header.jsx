@@ -30,7 +30,7 @@ export default function Header() {
           </div>
         </div>
         <navbar id="navbar">
-          <Link to="/home">Home</Link>
+          <a href="#">Home</a>
           <a href="#">Produtos</a>
           <a href="#">Categorias</a>
           <a href="#">Meus Pedidos</a>

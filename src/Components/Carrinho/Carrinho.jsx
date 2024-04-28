@@ -2,7 +2,7 @@ import "./Carrinho.css";
 import BgBlue from "../../assets/BgBlue.png";
 import Card from "../CardLists/Card";
 import Footer from "../Footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ImagemArrow from "../../assets/arrow.png";
 import { Link } from "react-router-dom";
 
@@ -15,6 +15,14 @@ export default function Carrinho() {
   function Decrescimo() {
     useCount(count - 1);
   }
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://662e256ba7dda1fa378c3039.mockapi.io/products")
+      .then((response) => response.json())
+      .then((data) => setApiData(data))
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <>
@@ -116,12 +124,9 @@ export default function Carrinho() {
         </div>
       </div>
       <div className="cards">
-        {/* <Card />
-        <Card />
-        <Card />
-        <Card /> */}
-
-        <p>cards</p>
+        {apiData.map((item, index) => (
+          <Card key={index} data={item} />
+        ))}
       </div>
       <div className="footer">
         <Footer />
