@@ -1,15 +1,22 @@
 import "./Card.css";
+import { useState } from "react";
+
 import kSwiss from "/images/kSwiss.png";
 
-export default function Card(){
-    return(
-        <>
-            <div class="trendingProduct" tabIndex={0}>
-                <div class="productImage"><span>30% off</span><img src={kSwiss} alt="sneaker kswiss" /></div>
-                <b>tênis</b>
-                <h4>K-Swiss V8 - Masculino</h4>
-                <p><span>$200</span> $100</p>
-            </div>
-        </>
-    )
+export default function Card({data}) {
+  return (
+    <>
+      <div className="trendingProduct" tabIndex={0}>
+        <div className="productImage">
+          <span>30% off</span>
+          <img src={kSwiss} alt="sneaker kswiss" />
+        </div>
+        <b>{data.name}</b>
+        <h4>{data.material}</h4>
+        <p>
+          <span>{data.price}</span> ${data.price}
+        </p>
+      </div>
+    </>
+  );
 }
