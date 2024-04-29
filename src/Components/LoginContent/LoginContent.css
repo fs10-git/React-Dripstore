@@ -42,9 +42,12 @@
 }
 
 #loginForm input {
-  width: 100%;
+  width: 97%;
   height: 2rem;
+  padding-left: 2vh;
+  border-radius: 4px;
   border: none;
+  outline: none;
   background-color: rgb(231, 231, 231);
   color: inherit;
   margin: 0.25rem 0 1.5rem 0;

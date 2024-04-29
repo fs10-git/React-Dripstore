@@ -38,7 +38,9 @@ export default function Cadastro() {
             do cliente.
           </p>
         </div>
-        <button>Criar Conta </button>
+        <div className="Botao_a">
+          <button>Criar Conta </button>
+        </div>
       </div>
     </>
   );

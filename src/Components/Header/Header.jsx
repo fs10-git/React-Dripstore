@@ -11,10 +11,12 @@ export default function Header() {
         <div id="utils">
           <div id="logo" tabIndex={0}>
             <img src={Vector} alt="Logo Digital Store" />
-            <span>Digital Store</span>
+            <Link to="/home" className="Logo_home">
+              Digital Store
+            </Link>
           </div>
           <div id="search">
-            <input type="search" placeholder="    Procurar Produto..." />
+            <input type="search" placeholder="Procurar Produto..." />
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
           <div id="signup">
@@ -26,6 +28,7 @@ export default function Header() {
           <div id="cart">
             <Link to="/carrinho">
               <i className="fa-solid fa-cart-shopping" tabIndex={0}></i>
+              <span>1</span>
             </Link>
           </div>
         </div>

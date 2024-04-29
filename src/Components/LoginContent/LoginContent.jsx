@@ -15,13 +15,13 @@ export default function LoginContent() {
           <input
             type="text"
             name="login"
-            placeholder="    Insira seu login ou email"
+            placeholder="Insira seu login ou email"
           />
           <label htmlFor="password">Senha*</label>
           <input
             type="password"
             name="password"
-            placeholder="   Insira sua senha"
+            placeholder="Insira sua senha"
           />
           <a href="#">Esqueci minha senha</a>
           <button>Acessar Conta</button>

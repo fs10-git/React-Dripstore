@@ -38,6 +38,7 @@
   border: 0;
   background-color: rgb(231, 231, 231);
   border-radius: 4px;
+  outline: none;
   margin-bottom: 1.5vh;
   padding-left: 1.5vh;
   font-size: 1.8vh;
@@ -71,6 +72,7 @@
   border: 0;
   background-color: rgb(231, 231, 231);
   border-radius: 4px;
+  outline: none;
   margin-bottom: 1.5vh;
   padding-left: 1.5vh;
   font-size: 1.8vh;
@@ -89,20 +91,25 @@
   font-size: 2vh;
   font-weight: 500;
 }
-#Pai button {
+.Botao_a {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+}
+.Botao_a button {
   width: 65%;
-  height: 7vh;
-  background-color: #c92071;
-  border: 0;
+  height: 6vh;
+  text-decoration: none;
   border-radius: 8px;
-  margin-left: 31vh;
-  margin-top: 4vh;
+  border: 2px solid #c92071;
+  background-color: #c92071;
   cursor: pointer;
   font-size: 2vh;
-  font-weight: 700;
   color: #ffffff;
+  font-weight: 700;
 }
-#Pai button:hover {
-  background-color: #e9529b;
-  transition: all 0.8s;
+.Botao_a button:hover {
+  background-color: #dd1676;
+  border: 2px solid #e9529b;
+  transition: 0.5s;
 }

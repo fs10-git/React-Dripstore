@@ -80,9 +80,9 @@ export default function Carrinho() {
               <p>Calcular frete</p>
             </div>
             <div className="cupom_b">
-              <input type="text" placeholder="insira seu código" />
+              <input type="text" placeholder="Insira seu código" />
               <button>OK</button>
-              <input type="text" placeholder="insira seu CEP" />
+              <input type="text" placeholder="Insira seu CEP" />
               <button>OK</button>
             </div>
           </div>
