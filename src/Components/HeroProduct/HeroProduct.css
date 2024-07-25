@@ -147,7 +147,7 @@ body {
   border-radius: 50%;
   border: 0;
   width: 3vw;
-  height: 6vh;
+  height: 3vw;
   background-color: #6feeff;
 }
 
@@ -155,7 +155,7 @@ body {
   border-radius: 50%;
   border: 0;
   width: 3vw;
-  height: 6vh;
+  height: 3vw;
   background-color: #ff6969;
 }
 
@@ -163,7 +163,7 @@ body {
   border-radius: 50%;
   border: 0;
   width: 3vw;
-  height: 6vh;
+  height: 3vw;
   background-color: #5e5e5e;
 }
 
@@ -171,21 +171,25 @@ body {
   border-radius: 50%;
   border: 0;
   width: 3vw;
-  height: 6vh;
+  height: 3vw;
   background-color: #6d70b7;
 }
 
 .color1:hover {
   border: 3px solid #c92071;
+  transition: 0.2s;
 }
 .color2:hover {
   border: 3px solid #c92071;
+  transition: 0.2s;
 }
 .color3:hover {
   border: 3px solid #c92071;
+  transition: 0.2s;
 }
 .color4:hover {
   border: 3px solid #c92071;
+  transition: 0.2s;
 }
 #buy {
   width: 20vw;

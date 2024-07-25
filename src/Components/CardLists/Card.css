@@ -3,7 +3,6 @@
   width: 22%;
   height: 37.5vh;
   cursor: pointer;
-  
 }
 
 .productImage {
@@ -55,3 +54,19 @@
   font-weight: bolder;
 }
 /* End Card > product Config */
+/*carrinho de compra add*/
+#cart_product {
+  width: 12vh;
+  height: 4vh;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.8vh;
+  margin-left: 4vh;
+  border: none;
+  border-radius: 6px;
+  background-color: #d1ec62;
+  cursor: pointer;
+}
+#cart_product:hover {
+  background-color: #ec509c;
+}

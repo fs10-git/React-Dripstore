@@ -141,7 +141,7 @@ navbar a {
 
 navbar a:hover {
   color: #c92071;
-  text-decoration: underline;
+  text-decoration: underline 2.5px solid;
 }
 /* End #header > navBar Config */
 /* End #header Config */

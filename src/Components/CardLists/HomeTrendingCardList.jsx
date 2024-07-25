@@ -1,21 +1,32 @@
 import {useState,useEffect} from "react"
 import "./CardList.css";
 import Card from "./Card";
+import axios from "axios";
 
 export default function HomeCardList(){
-    // let homeCardListArray = [];
-    // for(var index=0; index<8; index++){
-    //     homeCardListArray.push(<Card key={index} /> )
-    // }
-    const [apiData,setApiData] = useState([])
 
-    useEffect(() => {
-        fetch("https://662a922667df268010a467b6.mockapi.io/api/products/")
-        .then(response=> response.json())
-        .then(data => setApiData(data))
-        .catch(error => console.log(error))
+    const [produtos, setProdutos] = useState([])
 
-    },[]);
+
+    useEffect (() => {
+        async function fetchData() {
+            try {
+                const produtos = await axios.get("http://localhost:666/produtos-alta/getAll")
+                setProdutos(produtos.data)
+            }catch(error) {
+                console.log(`Error ao buscar dados ${error}`)
+            }
+        }
+        fetchData()
+    },[])
+
+    // useEffect(() => {
+    //     fetch("http://localhost:666/produtos-alta/getAll")
+    //     .then(response=> response.json())
+    //     .then(produtos => setProdutos(produtos))
+    //     .catch(error => console.log(error))
+
+    // },[]);
 
     return(
         <>
@@ -25,11 +36,13 @@ export default function HomeCardList(){
                     
                 {
 
-                apiData.map((item,index) => (
-                    <Card key = {index} data = {item} />
-                ))
-
-                }
+                produtos.map((produto) => (
+                    <Card
+                    key={produtos.id}
+                    produto={produto}
+                    
+                    />
+                ))}
                 
                 </div>
             </div>

@@ -1,6 +1,6 @@
 .relatedProducts {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 50vh;
   justify-content: space-between;
   margin-top: 5vh;
