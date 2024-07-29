@@ -1,10 +1,11 @@
 import "./Carrinho.css";
 import BgBlue from "../../assets/BgBlue.png";
-import Card from "../CardLists/Card";
+import Card from "../CardLists/Card.jsx";
 import Footer from "../Footer/Footer";
 import { useState, useEffect } from "react";
 import ImagemArrow from "../../assets/arrow.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Carrinho() {
   // contador
@@ -15,13 +16,20 @@ export default function Carrinho() {
   function Decrescimo() {
     useCount(count - 1);
   }
-  const [apiData, setApiData] = useState([]);
+  const [produtos, setProdutos] = useState([]);
 
   useEffect(() => {
-    fetch("https://662e256ba7dda1fa378c3039.mockapi.io/products")
-      .then((response) => response.json())
-      .then((data) => setApiData(data))
-      .catch((error) => console.log(error));
+    async function fetchData() {
+      try {
+        const produtos = await axios.get(
+          "http://localhost:666/produtos-alta/getAll"
+        );
+        setProdutos(produtos.data);
+      } catch (error) {
+        console.log(`Error ao buscar dados ${error}`);
+      }
+    }
+    fetchData();
   }, []);
 
   return (
@@ -124,8 +132,8 @@ export default function Carrinho() {
         </div>
       </div>
       <div className="cards">
-        {apiData.map((item, index) => (
-          <Card key={index} data={item} />
+        {produtos.slice(0, 4).map((produto) => (
+          <Card key={produtos.id} produto={produto} />
         ))}
       </div>
       <div className="footer">
